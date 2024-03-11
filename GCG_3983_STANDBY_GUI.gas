@@ -1,0 +1,448 @@
+Program.Sub.ScreenSU.Start
+gui.SS_Form1..create
+gui.SS_Form1..caption("CHOOSE STANDBY REASON")
+gui.SS_Form1..size(2250,1725)
+gui.SS_Form1..minx(0)
+gui.SS_Form1..miny(0)
+gui.SS_Form1..position(0,0)
+gui.SS_Form1..alwaysontop(False)
+gui.SS_Form1..fontname("Arial")
+gui.SS_Form1..fontsize(8)
+gui.SS_Form1..forecolor(0)
+gui.SS_Form1..fontstyle(,,,,)
+gui.SS_Form1..BackColor(-2147483633)
+gui.SS_Form1..controlbox(True)
+gui.SS_Form1..maxbutton(False)
+gui.SS_Form1..minbutton(False)
+gui.SS_Form1..mousepointer(0)
+gui.SS_Form1..moveable(True)
+gui.SS_Form1..sizeable(False)
+gui.SS_Form1..ShowInTaskBar(True)
+gui.SS_Form1..titlebar(True)
+gui.SS_Form1.lbl_ddlReason.create(label,"Choose Reason",True,1800,200,1,100,135,True,0,Arial,8,-2147483633,0)
+gui.SS_Form1.lbl_ddlReason.defaultvalue("")
+gui.SS_Form1.lbl_ddlReason.controlgroup(0)
+gui.SS_Form1.ddlReason.create(dropdownlist)
+gui.SS_Form1.ddlReason.visible(True)
+gui.SS_Form1.ddlReason.size(1800,330)
+gui.SS_Form1.ddlReason.zorder(0)
+gui.SS_Form1.ddlReason.position(100,335)
+gui.SS_Form1.ddlReason.enabled(True)
+gui.SS_Form1.ddlReason.fontname("Arial")
+gui.SS_Form1.ddlReason.fontsize(8)
+gui.SS_Form1.ddlReason.defaultvalue("")
+gui.SS_Form1.ddlReason.controlgroup(0)
+gui.SS_Form1.cmdOk.create(button)
+gui.SS_Form1.cmdOk.caption("Ok")
+gui.SS_Form1.cmdOk.visible(True)
+gui.SS_Form1.cmdOk.size(1000,360)
+gui.SS_Form1.cmdOk.zorder(0)
+gui.SS_Form1.cmdOk.position(100,750)
+gui.SS_Form1.cmdOk.enabled(True)
+gui.SS_Form1.cmdOk.fontname("Arial")
+gui.SS_Form1.cmdOk.fontsize(8)
+gui.SS_Form1.cmdOk.defaultvalue("")
+gui.SS_Form1.cmdOk.controlgroup(0)
+gui.SS_Form1.ddlReason.tabstop(true)
+gui.SS_Form1.ddlReason.tabindex(1)
+gui.SS_Form1.cmdOk.tabstop(true)
+gui.SS_Form1.cmdOk.tabindex(2)
+
+
+gui.SS_Form2..create
+gui.SS_Form2..caption("Down Time Log")
+gui.SS_Form2..size(8550,5280)
+gui.SS_Form2..minx(0)
+gui.SS_Form2..miny(0)
+gui.SS_Form2..position(0,0)
+gui.SS_Form2..event(unload,ss_form2_unload)
+gui.SS_Form2..alwaysontop(False)
+gui.SS_Form2..fontname("Arial")
+gui.SS_Form2..fontsize(8)
+gui.SS_Form2..forecolor(0)
+gui.SS_Form2..fontstyle(,,,,)
+gui.SS_Form2..BackColor(-2147483633)
+gui.SS_Form2..controlbox(True)
+gui.SS_Form2..maxbutton(False)
+gui.SS_Form2..minbutton(False)
+gui.SS_Form2..mousepointer(0)
+gui.SS_Form2..moveable(True)
+gui.SS_Form2..sizeable(False)
+gui.SS_Form2..ShowInTaskBar(True)
+gui.SS_Form2..titlebar(True)
+gui.SS_Form2.lbl_txt_DownTime.create(label,"Total Down Time(Hrs)",True,1785,230,1,125,90,True,0,Arial,8,-2147483633,0)
+gui.SS_Form2.lbl_txt_DownTime.defaultvalue("")
+gui.SS_Form2.lbl_txt_DownTime.controlgroup(0)
+gui.SS_Form2.txt_DownTime.create(textbox,"",True,1200,300,0,100,350,False,0,Arial,8,16777215,1)
+gui.SS_Form2.txt_DownTime.defaultvalue("")
+gui.SS_Form2.txt_DownTime.controlgroup(0)
+gui.SS_Form2.gsfg_TimeLog.create(gsflexgrid)
+gui.SS_Form2.gsfg_TimeLog.FixedRows(0)
+gui.SS_Form2.gsfg_TimeLog.FixedCols(0)
+gui.SS_Form2.gsfg_TimeLog.visible(True)
+gui.SS_Form2.gsfg_TimeLog.size(8070,3810)
+gui.SS_Form2.gsfg_TimeLog.zorder(0)
+gui.SS_Form2.gsfg_TimeLog.position(100,755)
+gui.SS_Form2.gsfg_TimeLog.enabled(True)
+
+
+gui.SS_F_Reason..create
+gui.SS_F_Reason..caption("CHOOSE STANDBY REASON")
+gui.SS_F_Reason..size(3585,1800)
+gui.SS_F_Reason..minx(0)
+gui.SS_F_Reason..miny(0)
+gui.SS_F_Reason..position(0,0)
+gui.SS_F_Reason..event(unload,ss_f_reason_unload)
+gui.SS_F_Reason..alwaysontop(False)
+gui.SS_F_Reason..fontname("Arial")
+gui.SS_F_Reason..fontsize(8)
+gui.SS_F_Reason..forecolor(0)
+gui.SS_F_Reason..fontstyle(,,,,)
+gui.SS_F_Reason..BackColor(-2147483633)
+gui.SS_F_Reason..controlbox(True)
+gui.SS_F_Reason..maxbutton(False)
+gui.SS_F_Reason..minbutton(False)
+gui.SS_F_Reason..mousepointer(0)
+gui.SS_F_Reason..moveable(True)
+gui.SS_F_Reason..sizeable(False)
+gui.SS_F_Reason..ShowInTaskBar(True)
+gui.SS_F_Reason..titlebar(True)
+gui.SS_F_Reason.lbl_ddlReason.create(label,"Choose Reason",True,1800,200,1,100,135,True,0,Arial,8,-2147483633,0)
+gui.SS_F_Reason.lbl_ddlReason.defaultvalue("")
+gui.SS_F_Reason.lbl_ddlReason.controlgroup(0)
+gui.SS_F_Reason.ddlReason.create(dropdownlist)
+gui.SS_F_Reason.ddlReason.visible(True)
+gui.SS_F_Reason.ddlReason.size(3105,330)
+gui.SS_F_Reason.ddlReason.zorder(0)
+gui.SS_F_Reason.ddlReason.position(100,335)
+gui.SS_F_Reason.ddlReason.enabled(True)
+gui.SS_F_Reason.ddlReason.fontname("Arial")
+gui.SS_F_Reason.ddlReason.fontsize(8)
+gui.SS_F_Reason.ddlReason.defaultvalue("")
+gui.SS_F_Reason.ddlReason.controlgroup(0)
+gui.SS_F_Reason.cmdOk.create(button)
+gui.SS_F_Reason.cmdOk.caption("Ok")
+gui.SS_F_Reason.cmdOk.visible(True)
+gui.SS_F_Reason.cmdOk.size(1000,360)
+gui.SS_F_Reason.cmdOk.zorder(0)
+gui.SS_F_Reason.cmdOk.position(100,750)
+gui.SS_F_Reason.cmdOk.enabled(True)
+gui.SS_F_Reason.cmdOk.fontname("Arial")
+gui.SS_F_Reason.cmdOk.fontsize(8)
+gui.SS_F_Reason.cmdOk.event(click,cmdok_click)
+gui.SS_F_Reason.cmdOk.defaultvalue("")
+gui.SS_F_Reason.cmdOk.controlgroup(0)
+
+
+Program.Sub.ScreenSU.End
+
+Program.Sub.Preflight.Start
+
+Variable.Global.sJob.Declare(String)
+Variable.Global.sSuffix.Declare(String)
+Variable.Global.sSeq.Declare(String)
+Variable.Global.sDtl_Seq.Declare(String)
+Variable.Global.sReason.Declare(String)
+Variable.Global.sEmployee.Declare(String)
+Variable.Global.sName_Employee.Declare(String)
+Variable.Global.iDownTime.Declare(Float,0)
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+F.Intrinsic.Control.SetErrorHandler("Main_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+'coded by SFF 4/15/2015
+'See program details for description of functionality
+
+'Open Connection
+F.ODBC.Connection!conX.OpenConnection(V.Ambient.PDSN,V.Ambient.PUser,V.Ambient.PPass,72000)
+
+F.Intrinsic.Control.If(V.Caller.Hook,=,15880)
+	'Clock Out of Job - Prompt for Standby Reason if OpCode = STAND
+	F.Intrinsic.Control.CallSub(Getreason)
+	Gui.SS_F_Reason..Show
+F.Intrinsic.Control.ElseIf(V.Caller.Hook,=,13620)
+	F.Intrinsic.Control.CallSub(Buildstyles)
+	F.Intrinsic.Control.CallSub(Loadgrid)
+	Gui.SS_Form2..Show
+F.Intrinsic.Control.Elseif(V.Caller.Hook,=,13580)
+	V.Passed.000057.Set("Down Time Log")
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Main_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3983_STANDBY_GUI.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.Main.End
+
+Program.Sub.GetReason.Start
+F.Intrinsic.Control.SetErrorHandler("GetReason_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sSql.Declare(String)
+V.Local.sFile.Declare(String)
+V.Local.bExists.Declare(Boolean)
+V.Local.i.Declare(Float)
+V.Global.dBegTime.Declare(Date)
+V.Global.iTime.Declare(Long)
+
+V.Global.sJob.Set(V.Passed.009990)
+V.Global.sSuffix.Set(V.Passed.009991)
+V.Global.sSeq.Set(V.Passed.009992)
+V.Global.sEmployee.Set(V.Passed.009993)
+V.Global.sName_Employee.Set(V.Passed.009994)
+
+F.Intrinsic.Date.ConvertTString(V.passed.009003,"HH:NN",V.Global.dBegTime)
+
+F.Intrinsic.Date.DateDiff("n",V.Global.dBegTime,V.Ambient.Time,V.Global.iTime)
+
+'Get Op-Code from JOB_OPERATIONS if = STAND then prompt
+F.Intrinsic.String.Build("Select Operation from v_JOB_OPERATIONS where JOB = '{0}' and SUFFIX = '{1}' and SEQ = '{2}'",V.Global.sJob,V.Global.sSuffix,V.Global.sSeq,V.Local.sSql)
+F.ODBC.Connection!conX.OpenRecordsetRO("rst",V.Local.sSql)
+F.Intrinsic.Control.If(V.ODBC.conX!rst.EOF,<>,True)
+	F.Intrinsic.Control.If(V.ODBC.conX!rst.FieldValTrim!Operation,<>,"STAND")
+		'Just END program if NOT = STAND
+		F.Intrinsic.Control.End
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.EndIf
+F.ODBC.conX!rst.Close
+
+'Get Reasons from MACHINE_STANDBY_GUI.cfg file
+F.Intrinsic.String.Build("{0}\GUI\MACHINE_STANDBY_GUI.cfg",V.Caller.FilesDir,V.Local.sFile)
+F.Intrinsic.File.Exists(V.Local.sFile,V.Local.bExists)
+F.Intrinsic.Control.If(V.Local.bExists,<>,True)
+	'End Program if file does not exist and show popup message
+	F.Intrinsic.UI.Msgbox("MACHINE_STANDBY_GUI.cfg File Does NOT Exist, Please See Administrator")
+	F.Intrinsic.Control.End
+F.Intrinsic.Control.EndIf
+
+'Get reasons from File
+F.Intrinsic.File.File2String(V.Local.sFile,V.Local.sFile)
+F.Intrinsic.String.Split(V.Local.sFile,V.Ambient.NewLine,V.Local.sFile)
+F.Intrinsic.Control.For(V.Local.i,2,V.Local.sFile.UBound,1)
+	'Load DropDown with reasons
+	F.Intrinsic.Control.If(V.Local.sFile(v.Local.i).Trim,<>,"")
+		Gui.SS_F_Reason.ddlReason.AddItem(V.Local.sFile(v.Local.i).Trim)
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.Next(V.Local.i)
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("GetReason_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3983_STANDBY_GUI.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.GetReason.End
+
+program.sub.ss_f_reason_unload.start
+F.Intrinsic.Control.SetErrorHandler("ss_f_reason_unload_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+'Do Not let user Exit Standby Prompt
+F.Intrinsic.UI.Msgbox("Must Choose STANDBY REASON","Choose STANDBY Reason")
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("ss_f_reason_unload_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3983_STANDBY_GUI.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+program.sub.ss_f_reason_unload.end
+
+program.sub.cmdok_click.start
+F.Intrinsic.Control.SetErrorHandler("cmdok_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sDate.Declare(String)
+
+F.Intrinsic.String.Format(V.Ambient.Date,"YYYY-MM-DD",V.Local.sDate)
+'Check to make sure reason is chosen
+V.Global.sReason.Set(V.Screen.SS_F_Reason!ddlReason.Text)
+F.Intrinsic.Control.If(V.Global.sReason.Trim,=,"")
+	F.Intrinsic.UI.Msgbox("Must Choose Reason to Proceed with STANDBY","Choose STANDBY Reason")
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.Endif
+
+'Save to Table
+F.ODBC.Connection!conX.OpenRecordsetRW("rst","SELECT * FROM GCG_3983_STANDBY")
+F.ODBC.conX!rst.AddNew
+F.ODBC.conX!rst.Set!JOB(V.Global.sJob.Trim)
+F.ODBC.conX!rst.Set!SUFFIX(V.Global.sSuffix.Trim)
+F.ODBC.conX!rst.Set!SEQ(V.Global.sSeq.Trim)
+F.ODBC.conX!rst.Set!REASON(V.Global.sReason.Trim)
+F.ODBC.conX!rst.Set!DATE_DOWN(V.local.sDate)
+F.ODBC.conX!rst.Set!BEGIN_TIME(V.Global.dBegTime)
+F.ODBC.conX!rst.Set!END_TIME(V.Ambient.Time)
+F.ODBC.conX!rst.Set!EMPLOYEE(V.Global.sEmployee)
+F.ODBC.conX!rst.Set!NAME_EMPLOYEE(V.Global.sName_Employee)
+F.ODBC.conX!rst.Set!TOTAL_MINUTES(V.Global.iTime)
+F.ODBC.conX!rst.Update
+F.ODBC.conX!rst.Close
+
+F.Intrinsic.Control.End
+
+F.Intrinsic.Control.Label("cmdok_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3983_STANDBY_GUI.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+program.sub.cmdok_click.end
+
+Program.Sub.BuildStyles.Start
+F.Intrinsic.Control.SetErrorHandler("BuildStyles_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+Gui.SS_Form2.gsfg_TimeLog.Cols(6)
+Gui.SS_Form2.gsfg_TimeLog.Rows(1)
+Gui.SS_Form2.gsfg_TimeLog.Rows(2)
+Gui.SS_Form2.gsfg_TimeLog.FixedRows(1)
+
+'All locked rows
+Gui.SS_Form2.gsfg_TimeLog.BuildStyle(1,0,"Type","Locked",True)
+Gui.SS_Form2.gsfg_TimeLog.BuildStyle(1,1,"Type","Locked",True)
+Gui.SS_Form2.gsfg_TimeLog.BuildStyle(1,2,"Type","Locked",True)
+Gui.SS_Form2.gsfg_TimeLog.BuildStyle(1,3,"Type","Locked",True)
+Gui.SS_Form2.gsfg_TimeLog.BuildStyle(1,4,"Type","Locked",True)
+Gui.SS_Form2.gsfg_TimeLog.BuildStyle(1,5,"Type","Locked",True)
+
+'titles
+Gui.SS_Form2.gsfg_TimeLog.TextMatrix(0,0,"Date")
+Gui.SS_Form2.gsfg_TimeLog.TextMatrix(1,0,"Reason")
+Gui.SS_Form2.gsfg_TimeLog.TextMatrix(2,0,"Start")
+Gui.SS_Form2.gsfg_TimeLog.TextMatrix(3,0,"End")
+Gui.SS_Form2.gsfg_TimeLog.TextMatrix(4,0,"Total")
+Gui.SS_Form2.gsfg_TimeLog.TextMatrix(5,0,"Employee")
+
+Gui.SS_Form2.gsfg_TimeLog.SetColumnPercentages(".10:.30:.10:.10:.10:.30")
+Gui.SS_Form2.gsfg_TimeLog.ApplyStyle(1,1)
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("BuildStyles_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3983_STANDBY_GUI.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.BuildStyles.End
+
+Program.Sub.LoadGrid.Start
+F.Intrinsic.Control.SetErrorHandler("LoadGrid_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+'Load total time to textbox, change caption to current work order, load grid with time logs from custom table
+V.Local.sSql.Declare(String)
+V.Local.i.Declare(Float)
+V.Local.sJob.Declare(String)
+V.Local.sRet.Declare(String)
+V.Local.sSuffix.Declare(String)
+
+F.Intrinsic.String.Left(V.Passed.000001,6,V.Local.sJob)
+F.Intrinsic.String.Mid(V.Passed.000001,7,3,V.Local.sSuffix)
+
+'set caption
+F.Intrinsic.String.Build("Down Time Log({0}-{1})",V.Local.sJob,V.Local.sSuffix,V.Local.sRet)
+Gui.SS_Form2..Caption(V.Local.sRet)
+
+'get total minutes for textbox
+F.Intrinsic.String.Build("Select Sum(TOTAL_MINUTES) as totalMins from GCG_3983_STANDBY where JOB = '{0}' and SUFFIX = '{1}'",V.Local.sJob,V.Local.sSuffix,V.Local.sSql)
+F.ODBC.Connection!conX.OpenRecordsetRO("rst",V.Local.sSql)
+F.Intrinsic.Control.If(V.ODBC.conX!rst.EOF,<>,True)
+	F.Intrinsic.Math.Div(V.ODBC.conX!rst.FieldValFloat!totalMins,60,V.Local.i)
+	F.Intrinsic.Math.Round(V.Local.i,2,V.Local.i)
+	Gui.SS_Form2.txt_DownTime.Text(V.Local.i)
+F.Intrinsic.Control.EndIf
+F.ODBC.conX!rst.Close
+
+'load grid
+F.Intrinsic.String.Build("Select DATE_DOWN,REASON,BEGIN_TIME,END_TIME,TOTAL_MINUTES,EMPLOYEE from GCG_3983_STANDBY where JOB = '{0}' and SUFFIX = '{1}'",V.Local.sJob,V.Local.sSuffix,V.Local.sSql)
+F.ODBC.Connection!conX.OpenRecordsetRO("rst",V.Local.sSql)
+F.Intrinsic.Control.If(V.ODBC.conX!rst.EOF,<>,True)
+	Gui.SS_Form2.gsfg_TimeLog.LoadRecordset("conX!rst",1,False)
+F.Intrinsic.Control.EndIf
+F.ODBC.conX!rst.Close
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("LoadGrid_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3983_STANDBY_GUI.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.LoadGrid.End
+
+program.sub.ss_form2_unload.start
+
+F.Intrinsic.Control.End
+
+program.sub.ss_form2_unload.end
+
+Program.Sub.Comments.Start
+${$0$}$GCG_MACHINE_STANDBY_GUI$}$SUPERVSR$}$4/16/2015
+${$1$}$$}$$}$1$}$38105$}$$}$4/16/2015 7:58:30 AM$}$It will fire each time a Job Detail Record is written and pass the hook the JBO-KEY (from the Jobs in Process Record - MOPEN record) and the DTL-KEY (from the Job Detail Record).
+
+GAB
+GAB script will look in the Custom table within item 2 for a record matching the record that
+Online Update is posting, where "IsTemp" = "True". If a record is found, the GAB Script will
+change "IsTemp" to False, and change the Dtl_Sequence to the new JOB_DETAIL Sequence
+number being created in Online Update.
+
+${$1$}$$}$$}$0$}$15890$}$$}$4/16/2015 7:57:28 AM$}$A GAB script will check the job that the user is punching out of to see if the OP Code is "STAND".
+If it is, the user will be prompted with a drop down list, populated from the text file on item 1, as a
+reason that they were on "Standby". User will NOT be able to skip this step. Record will be added
+to a custom table storing Job, Suffix, Sequence, Reason, IsTemp (Boolean used later), and
+Dtl_Sequence.
+${$2$}$$}$$}$0$}$1$}$Config File$}$4/16/2015 7:57:28 AM$}$MACHINE_STANDBY_GUI.cfg, This file is maintained by the user with reasons that will be in the prompt in the GUI for a STANDBY reason
+${$3$}$0$}$$}$-1$}$-1$}$$}$1/1/1900$}$GAB Script to activate when employee punches out ofa sequence with "STAND" as op code.
+Ask user for a reason, and save to a custom table.
+GAB Script to activate on On Line Update (Need Hook) that will tie records in the custom table to
+a specific detail sequence number.
+Specification
+1. Text file for configuration of reasons.
+A text file will be created ("Global\Plugins\GAB\GAS\StandyReason.cfg") that will be modifiable
+using notepad or similar text editor. Each line in the text file will represent a reason used in later
+steps. Customer responsible to configure this file.
+2. GAB Script on Hook 15890 (Post Process Job in GUI)
+A GAB script will check the job that the user is punching out of to see if the OP Code is "STAND".
+If it is, the user will be prompted with a drop down list, populated from the text file on item 1, as a
+reason that they were on "Standby". User will NOT be able to skip this step. Record will be added
+to a custom table storing Job, Suffix, Sequence, Reason, IsTemp (Boolean used later), and
+Dtl_Sequence.
+3.Run SFC>View>Work Orders>Script 1(Down Time Log) to see total hours of down time and a list of all records where standby time was logged.
+Program.Sub.Comments.End
+Program.Sub.ScreenSS.Start
+SS_Form1{{CAPTION::CHOOSE STANDBY REASON
+SS_Form1.CTRL{{NAME::ddlReason\\TYPE::4\\CAPTION::Choose Reason\\TABSTOP::0\\GROUP::-1\\BROWSER::0\\SIZE::1
+SS_Form1.CTRL{{NAME::cmdOk\\TYPE::5\\CAPTION::Ok\\TABSTOP::0\\GROUP::-1\\BROWSER::0\\SIZE::1
+
+SS_Form2{{CAPTION::Down Time Log
+SS_Form2.CTRL{{NAME::txt_DownTime\\TYPE::2\\CAPTION::Total Down Time\\GROUP::-1\\BROWSER::0\\SIZE::1
+
+Program.Sub.ScreenSS.End
+
